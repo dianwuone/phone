@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <title>me系统</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script>
+        window.onload = function(){
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+                html.style.fontSize = windowWidth / 7.2 +'px';
+            var luyou = document.getElementsByClassName('footer')[0];
+            var aLi = luyou.getElementsByTagName('li');
+            for(var i=0;i<aLi.length;i++){
+                aLi[i].onclick = function(){
+                    $.getJSON('one.html',function(data){
+
+                    })
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="haeder">
+        <div><img src="img/首页_03.png"></div>
+        <div>
+            <h3><b>李雷</b>总排名:11</h3>
+            <p>平均成绩:A-</p>
+            <p>职业素质:95</p>
+        </div>
+        <div>
+            <img src="img/签到.png">
+        </div>
+    </div>
+    <div class="banner"><img src="img/图-船_03.png" ></div>
+    <div class="main">
+        <div class="clearfix">
+            <h5><img src="img/首页_18.png">作品盒子</h5>
+            <span>更多</span>
+        </div>
+        <div class="center">
+            <div class="left">
+                <div><img src="img/京剧盒子.png">
+                    <h5>{{cen:name}}</h5>
+                    <p>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+            <div class="right">
+                <div><img src="img/京剧盒子.png">
+                    <h5>{{cen:name}}</h5>
+                    <p>1512期UI视觉设计师班1班</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><img src="img/首页.png">
+                <p>首页</p>
+            </li>
+            <li><img src="img/助手.png">
+                <p>助手</p>
+            </li>
+            <li><img src="img/社区.png">
+                <p>社区</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

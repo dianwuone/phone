@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通知详情页</title>
+    <link href="css/reset.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <style>
+        .top{height: 0.8rem;background: #00aabb}
+        .top li{float: left;margin-left: 0.3rem;line-height: 0.8rem;color: #ffffff}
+        .top li img{width: 0.41rem;}
+        .top ul .show{float: right;margin-right: 0.1rem;margin-top: 0.1rem;}
+    </style>
+    <script>
+        window.onload = function(){
+            var html = document.documentElement;
+            var windowWidth = html.clientWidth;
+            html.style.fontSize = windowWidth / 7.2 +'px';
+        };
+    </script>
+
+</head>
+<body>
+<div class="top">
+    <ul>
+        <li><</li>
+        <li>活动通知</li>
+        <li class="show"><img src="img/作业成绩_01_03.png"> </li>
+    </ul>
+</div>
+<div class="banner"><img src="img/图-船_03.png"></div>
+<div>
+    <div>
+        <ul>
+            <li>提交时间</li>
+            <li>处理状态</li>
+            <li>评价状态</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>{{can:time}}</li>
+            <li>已处理</li>
+            <li><a href="javascript:;"></a>以评价</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
